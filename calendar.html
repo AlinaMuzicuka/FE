@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .calendar {
+            padding: 0;
+            display: flex;
+            width: 350px;
+            flex-wrap: wrap;
+        }
+        .calendar__item {
+            list-style: none;
+            width: calc(100% / 7);
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+        .calendar__item--bold {
+            font-weight: 600;
+        }
+        .calendar__item--grey {
+            color: grey;
+        }
+        .calendar__item--active {
+            background: black;
+            color: #ffff;
+        }
+        .calendar__item--small {
+            font-size: .75rem;
+        }
+        .calendar__item:not(.calendar__item--bold):hover {
+            background: rgb(227, 224, 224);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2 class="subtitle">Schedule</h2>
+        <ul class="calendar">
+            <li class="calendar__item calendar__item--bold calendar__item--small">Sun</li>
+            <li class="calendar__item calendar__item--bold calendar__item--small">Mon</li>
+            <li class="calendar__item calendar__item--bold calendar__item--small">Tue</li>
+            <li class="calendar__item calendar__item--bold calendar__item--small">Wed</li>
+            <li class="calendar__item calendar__item--bold calendar__item--small">Thu</li>
+            <li class="calendar__item calendar__item--bold calendar__item--small">Fri</li>
+            <li class="calendar__item calendar__item--bold calendar__item--small">Sat</li>
+            <li class="calendar__item calendar__item--grey">8</li>
+            <li class="calendar__item calendar__item--grey">9</li>
+            <li class="calendar__item calendar__item--grey">10</li>
+            <li class="calendar__item calendar__item--grey">11</li>
+            <li class="calendar__item calendar__item--grey">12</li>
+            <li class="calendar__item">13</li>
+            <li class="calendar__item">14</li>
+            <li class="calendar__item">15</li>
+            <li class="calendar__item">16</li>
+            <li class="calendar__item">17</li>
+            <li class="calendar__item">18</li>
+            <li class="calendar__item">19</li>
+            <li class="calendar__item calendar__item--active">20</li>
+            <li class="calendar__item">21</li>
+            <li class="calendar__item">22</li>
+            <li class="calendar__item">23</li>
+            <li class="calendar__item">24</li>
+            <li class="calendar__item">25</li>
+            <li class="calendar__item">26</li>
+            <li class="calendar__item">27</li>
+            <li class="calendar__item">28</li>
+            <li class="calendar__item">29</li>
+            <li class="calendar__item">30</li>
+            <li class="calendar__item">31</li>
+            <li class="calendar__item">32</li>
+            <li class="calendar__item">33</li>
+            <li class="calendar__item">34</li>
+            <li class="calendar__item">35</li>
+            <li class="calendar__item">36</li>
+            <li class="calendar__item">37</li>
+            <li class="calendar__item">38</li>
+            <li class="calendar__item">39</li>
+            <li class="calendar__item">40</li>
+            <li class="calendar__item">41</li>
+            <li class="calendar__item">42</li>
+        </ul>
+    </section>
+    
+</body>
+</html>
