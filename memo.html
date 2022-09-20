@@ -69,6 +69,110 @@
             margin-left: 250px;
             padding: 2rem;
         }
+        .content {
+            width: 800px;
+            height: 100%;
+        }
+        .events {
+            width: 350px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .calendar {
+            padding: 0;
+            display: flex;
+            width: 350px;
+            flex-wrap: wrap;
+        }
+        .calendar__item {
+            list-style: none;
+            width: calc(100% / 7);
+            aspect-ratio: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+        }
+        .calendar__item--bold {
+            font-weight: 600;
+        }
+        .calendar__item--grey {
+            color: grey;
+        }
+        .calendar__item--active {
+            background: black;
+            color: #ffff;
+        }
+        .calendar__item--small {
+            font-size: .75rem;
+        }
+        .calendar__item:not(.calendar__item--bold):hover {
+            background: rgb(227, 224, 224);
+            cursor: pointer;
+        }
+        .container {
+            height: 450px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            position: relative;
+        }
+        .timeline {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .timeline__line {
+            height: 2px;
+            background: rgb(230, 227, 227);
+            width: 80%;
+        }
+        .lesson {
+            background: orange;
+            height: 40px;
+            width: 80%;
+            position: absolute;
+            left: 20%;
+
+        }
+        .lesson--9h {
+            top: 0;
+        }
+        .lesson--930h {
+            top: calc(450px / 17);
+        }
+        .lesson--10h {
+            top: calc(450px / 17 * 2);
+        }
+        .lesson--1030h {
+            top: calc(450px / 17 * 3);
+        }
+        .lesson--11h {
+            top: calc(450px / 17 * 4);
+        }
+        .lesson--1130h {
+            top: calc(450px / 17 * 5);
+        }
+        .lesson--12h {
+            top: calc(450px / 17 * 6);
+        }
+        .lesson--1230h {
+            top: calc(450px / 17 * 7);
+        }
+        .lesson--13h {
+            top: calc(450px / 17 * 8);
+        }
+        .lesson--1330h {
+            top: calc(450px / 17 * 9);
+        }
+        .lesson--14h {
+            top: calc(450px / 17 * 10);
+        }
+        .lesson--1430h {
+            top: calc(450px / 17 * 11);
+        }
         /*секция стилей для мобильных устройств*/
         @media (max-width: 768px) {
             .sidebar {
@@ -171,7 +275,119 @@
             </p>
         </section>
         <section class="events">
-
+            <section>
+                <h2 class="subtitle">Schedule</h2>
+                <ul class="calendar">
+                    <li class="calendar__item calendar__item--bold calendar__item--small">Sun</li>
+                    <li class="calendar__item calendar__item--bold calendar__item--small">Mon</li>
+                    <li class="calendar__item calendar__item--bold calendar__item--small">Tue</li>
+                    <li class="calendar__item calendar__item--bold calendar__item--small">Wed</li>
+                    <li class="calendar__item calendar__item--bold calendar__item--small">Thu</li>
+                    <li class="calendar__item calendar__item--bold calendar__item--small">Fri</li>
+                    <li class="calendar__item calendar__item--bold calendar__item--small">Sat</li>
+                    <li class="calendar__item calendar__item--grey">26</li>
+                    <li class="calendar__item calendar__item--grey">27</li>
+                    <li class="calendar__item calendar__item--grey">28</li>
+                    <li class="calendar__item calendar__item--grey">29</li>
+                    <li class="calendar__item calendar__item--grey">30</li>
+                    <li class="calendar__item">1</li>
+                    <li class="calendar__item">2</li>
+                    <li class="calendar__item">3</li>
+                    <li class="calendar__item">4</li>
+                    <li class="calendar__item">5</li>
+                    <li class="calendar__item calendar__item--active">6</li>
+                    <li class="calendar__item">7</li>
+                    <li class="calendar__item">9</li>
+                    <li class="calendar__item">10</li>
+                    <li class="calendar__item">11</li>
+                    <li class="calendar__item">12</li>
+                    <li class="calendar__item">13</li>
+                    <li class="calendar__item">14</li>
+                    <li class="calendar__item">15</li>
+                    <li class="calendar__item">16</li>
+                    <li class="calendar__item">17</li>
+                    <li class="calendar__item">18</li>
+                    <li class="calendar__item">19</li>
+                    <li class="calendar__item">20</li>
+                    <li class="calendar__item">21</li>
+                    <li class="calendar__item">22</li>
+                    <li class="calendar__item">23</li>
+                    <li class="calendar__item">24</li>
+                    <li class="calendar__item">25</li>
+                    <li class="calendar__item">26</li>
+                    <li class="calendar__item">27</li>
+                    <li class="calendar__item">28</li>
+                    <li class="calendar__item">29</li>
+                    <li class="calendar__item">30</li>
+                    <li class="calendar__item">31</li>
+                </ul>
+            </section>
+            <section>
+                <h2>
+                    Upcoming
+                </h2>
+                <div class="container">
+        
+                    <div class="lesson">
+                        lesson
+                    </div>
+        
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            9:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            10:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            11:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            12:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            13:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            14:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            15:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            16:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline__time">
+                            17:00
+                        </div>
+                        <div class="timeline__line"></div>
+                    </div>
+                </div>
+            </section>
         </section>
 
     </main>
