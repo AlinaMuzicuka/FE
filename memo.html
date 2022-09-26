@@ -173,6 +173,62 @@
         .lesson--1430h {
             top: calc(450px / 17 * 11);
         }
+        .user {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            border-radius: 7px;
+
+        }
+        .user__nl {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        .user__avatar {
+            width: 70px;
+            height: 70px;
+        }
+        .user__location {
+            color: rgb(201, 196, 196);
+            font-size: 13px;
+        }
+        .courses {
+            display: flex;
+            justify-content: space-between;
+        }
+        .courses__status--active {
+            font-weight: bold;
+        }
+        .courses__status {
+            color: rgb(201, 196, 196);
+        }
+        .block {
+            position: relative;
+            display: flex;
+            padding: 1rem 0;
+            
+        }
+        .block__info {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-left: 2rem;
+
+        }
+        .block__img {
+            width: 260px;
+            height: 180px;
+        }
+        .block__details {
+            color: rgb(201, 196, 196);
+            font-size: 15px;
+            padding: 0 1rem;
+        }
+        .block__subject {
+            padding-left: 1rem;
+        }
         /*секция стилей для мобильных устройств*/
         @media (max-width: 768px) {
             .sidebar {
@@ -267,9 +323,67 @@
     </aside>
     <main>
         <section class="content">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, accusantium eius neque nam commodi aperiam fugiat inventore odit ipsa incidunt laborum, quidem voluptatem, dolorem porro voluptates in quisquam? Quis reiciendis ea suscipit tempora vitae consectetur modi quasi rem consequuntur, id vel quam tenetur voluptatibus maxime animi atque saepe qui? Dolorem quis eaque quae sunt repellat inventore natus laudantium explicabo quos fuga praesentium, nesciunt eos saepe est aut. Tenetur animi inventore tempora ipsum sed ab perspiciatis, autem in, assumenda doloribus nobis ipsam quia vero eveniet libero repellendus minima? Debitis similique reiciendis facilis dolor labore laboriosam cumque. Exercitationem vitae, ipsum, et ad sint maxime cumque totam odit suscipit, cum id perferendis! Tempora repellendus omnis odit quidem dignissimos et eaque vitae, reprehenderit, a blanditiis obcaecati facere explicabo quibusdam aperiam excepturi pariatur debitis doloribus aspernatur cumque delectus cum tenetur ratione. Commodi voluptas dolorum modi pariatur aliquid iusto, voluptate veniam totam nemo vero eius, ipsa id. Ex dolorem aperiam ullam ab consequuntur. Ex iure sit eius a, harum cupiditate quo, quam quisquam assumenda aperiam numquam ut, fuga soluta magni nobis nostrum dolor. Repudiandae obcaecati labore aperiam nostrum tempore consequuntur modi expedita nihil, consequatur eaque dignissimos libero, voluptatibus eius a error delectus id dolorum dolore dolor. Eligendi rerum, at ipsum enim praesentium perspiciatis odio a? Nam dolores eveniet quisquam sit eligendi? Dolorem laboriosam temporibus ratione dolore nesciunt saepe possimus ad ex exercitationem aut neque a quos rem ut, quaerat inventore sit fuga nostrum quas quo doloribus! Qui cumque vitae minus iste eius nobis unde odio sapiente, repellat debitis facere culpa esse numquam quam animi molestias perspiciatis velit tempore in obcaecati commodi architecto vel quis ex. Eveniet, pariatur sunt veniam eaque tempora amet suscipit odit aut ipsam tenetur fugiat voluptatibus non, quis dolorum saepe ab possimus culpa obcaecati impedit dignissimos adipisci facere reiciendis similique? Voluptatum porro excepturi ipsum molestias officia, impedit vel laudantium sit. Aliquam, quia possimus! Cum, corrupti. Porro cupiditate ducimus, aliquam eum modi iste laborum velit tempora esse odio eius molestiae sequi ex facere aperiam incidunt quas similique? Harum eaque sint sapiente tempora repellat nemo quaerat ut aliquid rem nulla corporis, natus non distinctio unde, consectetur officia magnam? Eaque doloribus perspiciatis fugit sint placeat natus veniam esse porro animi possimus vitae, voluptate neque, nisi optio ex autem tenetur reprehenderit mollitia id aperiam! Dolore error architecto iure! Molestias accusamus qui aspernatur quaerat ipsa nihil, ducimus aperiam architecto quidem animi ad, autem minima ut sequi, id possimus dolor consectetur. Voluptatum a adipisci aut explicabo non, optio possimus. At, quaerat voluptatibus delectus qui quo officiis eum quas quidem repellendus ipsam velit perferendis sunt ab maiores adipisci placeat pariatur alias dicta corporis temporibus iure rerum officia atque neque. Aut, iusto. Atque odio optio tempore totam temporibus alias accusantium neque, necessitatibus dolor accusamus sit, harum impedit, fugiat minima iure est repudiandae tenetur ex mollitia non! Doloribus suscipit autem et ut alias molestiae voluptas quos aut nihil voluptatum quae hic repellat ducimus consequatur aspernatur quam ratione, velit vero saepe necessitatibus provident? Iure officia, inventore id expedita maxime reprehenderit dolorum nam porro!
-            </p>
+            <div class="user">
+                <img class="user__avatar" src="https://pbs.twimg.com/media/EGSq_kjWoAcvntn?format=jpg&name=small" alt="">
+                <div class="user__nl"></div>
+                    <h2 class="user__name">
+                        Leslie Alexander
+                    </h2>
+                    <h4 class="user__location">
+                        Los Angeles, CA
+                    </h4>
+                </div>
+            </div>
+            <h1>
+                Courses
+            </h1>
+            <div class="courses">
+                <p class="courses__status--active">
+                    All 
+                </p>
+                <p class="courses__status">
+                    Current 
+                </p>
+                <p class="courses__status">
+                    Pending 
+                </p>
+                <p class="courses__status">
+                    Complited 
+                </p>
+            </div>
+            <div class="block">
+                <img class="block__img" src="https://cdn.dribbble.com/users/702789/screenshots/11139566/media/a8ec1e3aa571c58172c77ed8ac9b2e4a.png" alt="">
+                <span class="block__info">
+                    <p class="block__details">
+                        Programming → Oct 09,2022
+                    </p>
+                    <h3 class="block__subject">
+                        Object-Oriented Programming in Java
+                    </h3>
+                 </span>
+            </div>
+            <div class="block">
+                <img class="block__img" src="https://cdn.dribbble.com/users/702789/screenshots/11139566/media/a8ec1e3aa571c58172c77ed8ac9b2e4a.png" alt="">
+                <span class="block__info">
+                    <p class="block__details">
+                        Programming → Oct 09,2022
+                    </p>
+                    <h3 class="block__subject">
+                        Object-Oriented Programming in Java
+                    </h3>
+                 </span>
+            </div>
+            <div class="block">
+                <img class="block__img" src="https://cdn.dribbble.com/users/702789/screenshots/11139566/media/a8ec1e3aa571c58172c77ed8ac9b2e4a.png" alt="">
+                <span class="block__info">
+                    <p class="block__details">
+                        Programming → Oct 09,2022
+                    </p>
+                    <h3 class="block__subject">
+                        Object-Oriented Programming in Java
+                    </h3>
+                 </span>
+            </div>
             <p class="burger" onclick="toggleMenu()">
                 показать/крыть меню
             </p>

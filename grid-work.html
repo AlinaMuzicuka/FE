@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+
+    <style>
+        html, body, .wrapper {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+        }
+        aside {
+            background: green;
+            grid-area: aside;
+        }
+        header {
+            background: green;
+            grid-area: header;
+        }
+        .panel1 {
+            background: yellow;
+            grid-area: panel1;
+        }
+        .panel2 {
+            background: red;
+            grid-area: panel2;
+        }
+        .panel3 {
+            background: red;
+            grid-area: panel3;
+        }
+        .panel4 {
+            background: yellow;
+            grid-area: panel4;
+        }
+        .panel5 {
+            background: red;
+            grid-area: panel5;
+        }
+        footer {
+            background: green;
+            grid-area: footer;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 250px auto auto 250px;
+            grid-template-rows: 200px auto auto;
+            grid-gap: 10px;
+            grid-template-areas:
+                "aside header header panel5"
+                "aside panel1 panel2 footer"
+                "aside panel3 panel4 footer"
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <div class="panel1"></div>
+        <div class="panel2"></div>
+        <div class="panel3"></div>
+        <div class="panel4"></div>
+        <div class="panel5"></div>
+        <footer></footer>
+    </div>
+
+</body>
+</html>
