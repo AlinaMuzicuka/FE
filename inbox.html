@@ -66,7 +66,7 @@
             color: black;
             text-decoration: none;
         }
-        .menu__link--active {
+        .menu__link--active, .menu__link:hover {
             border-right: 5px solid rgb(255, 81, 0);
             background: white;
             cursor: pointer;
@@ -110,7 +110,6 @@
         }
 
         .inbox {
-            background: grey;
             border-right: 1px solid grey;
             width: 300px;
             height: 100%;
@@ -118,6 +117,125 @@
             top: 0;
             left: 250px;
         }
+        .inbox__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 15vw;
+            height: 15vh;
+            margin: 0 20px;
+            font-size: 20px;
+        }
+        .inbox__new {
+            background: none;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 5px;
+            font-size: 1.5rem;
+            padding: 0 7px;
+        }
+        .inbox__menu {
+            display: flex;
+            align-items: center;
+            box-sizing: border-box;
+            background: rgb(232, 228, 228);
+            width: 15vw;
+            height: 5vh;
+            border-radius: 10px;
+            padding: 10px 5px;
+            margin: 0 30px 0 30px;
+        }
+        .menu__mode {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(20vw/2);
+            border-radius: 7px;
+            border: none;
+            background: rgb(232, 228, 228);
+            color: grey;
+        }
+        .menu__mode:hover, .menu__mode--active {
+            background: white;
+            color: black;
+            height: 3vh;
+            border-radius: 7px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .inbox__block {
+            display: flex;
+            align-items: center;
+            width: 20wv;
+            height: 13vh;
+            box-sizing: border-box;
+            padding: 20px;
+            border-bottom: 1px solid rgb(232, 228, 228);
+        }
+        .inbox__block i {
+            color: rgb(53, 53, 182);
+            font-size: 2.5rem;
+            margin-right: 20px;
+        }
+        .inbox__block:hover, .inbox__block--active {
+            border: none;
+            background: rgb(232, 228, 228);
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .inbox__block:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        .inbox__block:first-child {
+            margin-top: 25px;
+        }
+        .block__name {
+            font-weight: 500px;
+        }
+        .block__post {
+            font-size: 0.7rem;
+            color: gray;
+            margin-top: -10px;
+        }
+        .block__message {
+            font-size: 0.8rem;
+            margin-top: -10px;
+        }
+        .message__indicator {
+            font-size: 1rem;
+            color: white;
+            background: rgb(53, 53, 182);
+            border: 0.5rem solid rgb(53, 53, 182);
+            border-radius: 50%;
+            margin-left: 80px;
+        }
+        .message__indicator--second {
+            margin-left: 57px;
+        }
+        .chat {
+            height: 100vh;
+            width: 64vw;
+        }
+        .chat__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+            border-bottom: 1px solid rgba(139, 139, 139, 0.319);
+        }
+        .person__info {
+            display: flex;
+            margin-left: -20px;
+        }
+        .person__avatar i {
+            font-size: 2,5rem;
+            color: rgb(53, 53, 182);
+            
+        }
+        .chat__status {
+            font-size: 0,8rem;
+            color: gray;
+        }
+
     </style>
 </head>
 <body>
@@ -216,9 +334,100 @@
         </section>
     </aside>
     <main>
-        <div class="inbox"></div>
-        <div class="chat"></div>
-        <div class="panel"></div>
+        <section class="inbox">
+            <header class="inbox__title">
+                <h1>Inbox</h1>
+                <button class="inbox__new">+</button>
+            </header>
+            <div class="inbox__menu">
+                <button class="menu__mode menu__mode--active"> General</button>
+                <button class="menu__mode">Total</button>
+            </div>
+            <div class="inbox__list">
+                <div class="inbox__block inbox__block--active">
+                    <i class="las la-user"></i>
+                    <div class="block__content">
+                        <p class="block__name">Michael.B</p>
+                        <p class="block__post">Project manager</p>
+                        <p class="block__message">Sent you the file</p>
+                    </div>
+                    <p class="message__indicator">2</p>
+                </div>
+                <div class="inbox__block inbox__block--active">
+                    <i class="las la-user"></i>
+                    <div class="block__content">
+                        <p class="block__name">Katie.W</p>
+                        <p class="block__post">Middle designer</p>
+                        <p class="block__message">See you tomorrow...</p>
+                    </div>
+                    <p class="message__indicator message__indicator--second">3</p>
+                </div>
+                <div class="inbox__block">
+                    <i class="las la-user"></i>
+                    <div class="block__content">
+                        <p class="block__name">Arnold.J</p>
+                        <p class="block__post">UI designer</p>
+                        <p class="block__message">Hi) I checked the layout agai...</p>
+                    </div>
+                </div>
+                <div class="inbox__block">
+                    <i class="las la-user"></i>
+                    <div class="block__content">
+                        <p class="block__name">Fannie.K</p>
+                        <p class="block__post">HR manager</p>
+                        <p class="block__message">okay!</p>
+                    </div>
+                </div>
+                <div class="inbox__block">
+                    <i class="las la-user"></i>
+                    <div class="block__content">
+                        <p class="block__name">Isaac.A</p>
+                        <p class="block__post">SMM manager</p>
+                        <p class="block__message">I don't rhink we're going to finish ...</p>
+                    </div>
+                </div>
+                <div class="inbox__block">
+                    <i class="las la-user"></i>
+                    <div class="block__content">
+                        <p class="block__name">Jacob</p>
+                        <p class="block__post">Ux Designer</p>
+                        <p class="block__message">Sorry, Friend. I won't do it again!</p>
+                    </div>
+                </div>
+                <div class="inbox__block">
+                    <i class="las la-user"></i>
+                    <div class="block__content">
+                        <p class="block__name">Lisa.O</p>
+                        <p class="block__post"> </p>
+                        <p class="block__message">Online 1 hour ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chat">
+            <header class="chat__header">
+                <div class="person__avatar">
+                    <i class="las la-user"></i>
+                </div>
+                <div class="person__info">
+                    <p class="person__name">Michael.B</p>
+                    <p class="chat__status">Online</p>
+                </div>
+                <div class="chat__items">
+                    <div class="chat_search">
+                        <input type="text" placeholder="Search">
+                        <i class="las la-search"></i>
+                    </div>
+                    <button class="chat__voice">
+                        <i class="las la-microphone"></i>
+                    </button>
+                    <button class="chat__photo">
+                        <i class="las la-camera"></i>
+                    </button>
+                </div>
+            </header>
+        </section>
+        <section class="panel"></section>
     </main>
     
 </body>
