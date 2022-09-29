@@ -108,7 +108,9 @@
         li {
             list-style: none;
         }
-
+        main {
+            margin-left: 500px;
+        }
         .inbox {
             border-right: 1px solid grey;
             width: 300px;
@@ -198,7 +200,9 @@
         }
         .block__message {
             font-size: 0.8rem;
-            margin-top: -10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         .message__indicator {
             font-size: 1rem;
@@ -226,16 +230,54 @@
             display: flex;
             margin-left: -20px;
         }
-        .person__avatar i {
-            font-size: 2,5rem;
-            color: rgb(53, 53, 182);
-            
+        .avatar {
+            margin: 0;
+            line-height: 0;
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+        }
+        .online {
+            background: lightgreen;
+            width: 15px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 3px solid white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
         }
         .chat__status {
             font-size: 0,8rem;
             color: gray;
         }
-
+        .chat__messages {
+            display: flex;
+            flex-direction: column;
+        }
+        .message__outgoing {
+            direction: rtl;
+        }
+        .message__incoming {
+        }
+        time {
+            font-size: 0.8rem;
+            color: gray;
+        }
+        .message__content {
+            height: fit-content;
+            width: fit-content;
+            background: rgb(242, 239, 239);
+            box-sizing: border-box;
+            padding: 15px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
@@ -345,7 +387,10 @@
             </div>
             <div class="inbox__list">
                 <div class="inbox__block inbox__block--active">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                        <div class="online"></div>
+                    </figure>
                     <div class="block__content">
                         <p class="block__name">Michael.B</p>
                         <p class="block__post">Project manager</p>
@@ -354,7 +399,10 @@
                     <p class="message__indicator">2</p>
                 </div>
                 <div class="inbox__block inbox__block--active">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                        <div class="online"></div>
+                    </figure>
                     <div class="block__content">
                         <p class="block__name">Katie.W</p>
                         <p class="block__post">Middle designer</p>
@@ -363,7 +411,9 @@
                     <p class="message__indicator message__indicator--second">3</p>
                 </div>
                 <div class="inbox__block">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                    </figure>
                     <div class="block__content">
                         <p class="block__name">Arnold.J</p>
                         <p class="block__post">UI designer</p>
@@ -371,7 +421,9 @@
                     </div>
                 </div>
                 <div class="inbox__block">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                    </figure>
                     <div class="block__content">
                         <p class="block__name">Fannie.K</p>
                         <p class="block__post">HR manager</p>
@@ -379,7 +431,9 @@
                     </div>
                 </div>
                 <div class="inbox__block">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                    </figure>
                     <div class="block__content">
                         <p class="block__name">Isaac.A</p>
                         <p class="block__post">SMM manager</p>
@@ -387,7 +441,9 @@
                     </div>
                 </div>
                 <div class="inbox__block">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                    </figure>
                     <div class="block__content">
                         <p class="block__name">Jacob</p>
                         <p class="block__post">Ux Designer</p>
@@ -395,7 +451,9 @@
                     </div>
                 </div>
                 <div class="inbox__block">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                    </figure>
                     <div class="block__content">
                         <p class="block__name">Lisa.O</p>
                         <p class="block__post"> </p>
@@ -407,7 +465,9 @@
         <section class="chat">
             <header class="chat__header">
                 <div class="person__avatar">
-                    <i class="las la-user"></i>
+                    <figure class="avatar">
+                        <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                    </figure>
                 </div>
                 <div class="person__info">
                     <p class="person__name">Michael.B</p>
@@ -426,6 +486,50 @@
                     </button>
                 </div>
             </header>
+            <div class="chat__messages">
+                <div class="chat__date">July 29, Tuesday</div>
+                <div class="message__outgoing">
+                    <time>12:25</time>
+                    <div class="message__content">Hello</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                </div>
+                <div class="message__incoming">
+                    <time>12:28</time>
+                    <div class="message__content">Hi</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                </div>
+                <div class="message__outgoing">
+                    <time>12:25</time>
+                    <div class="message__content">Hello</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                </div>
+                <div class="message__incoming">
+                    <time>12:28</time>
+                    <div class="message__content">Hi</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                </div>
+                <div class="chat__date">July 29, Tuesday</div>
+                <div class="message__outgoing">
+                    <time>12:25</time>
+                    <div class="message__content">Hello</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                </div>
+                <div class="message__incoming">
+                    <time>12:28</time>
+                    <div class="message__content">Hi</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                </div>
+                <div class="message__outgoing">
+                    <time>12:25</time>
+                    <div class="message__content">Hello</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                </div>
+                <div class="message__incoming">
+                    <time>12:28</time>
+                    <div class="message__content">Hi</div>
+                    <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+                </div>
+            </div>
         </section>
         <section class="panel"></section>
     </main>

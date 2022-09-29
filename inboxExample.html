@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body, .wrapper {
+            height: 100%;
+        }
+        body {
+            margin: 20%;
+        }
+        .avatar {
+            margin: 0;
+            line-height: 0;
+        }
+        .item {
+            background: gold;
+            width: 350px;
+            aspect-ratio: 3 / 1;
+            display: grid;
+            grid-template-columns: 90px auto 50px;
+            padding: 10px;
+            gap: 30px;
+            border-radius: 18px;
+        }
+        .image, .name, .indicator {
+            display: grid;
+            align-items: center;
+        }
+        .avatar {
+            width: 80px;
+            height: 80px;
+            position: relative;
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+        }
+        .online {
+            background: lightgreen;
+            width: 15px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 3px solid white;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="item">
+        <div class="image">
+            <figure class="avatar">
+                <img src="https://etozhkirill.ru/_next/static/image/src/assets/images/memoji.16d5cc0fa0d69c7ef38a4e8e4f4d4e00.png" alt="">
+                <div class="online"></div>
+            </figure>
+        </div>
+        <div class="name">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores culpa voluptatem ex molestiae quidem reiciendis autem nesciunt facere ipsum sapiente minus blanditiis officiis expedita error similique quia distinctio magni quae aliquam, praesentium dicta nulla voluptate. Voluptas dolor veritatis hic mollitia accusamus natus? Dignissimos accusamus non porro ex. Iure illo harum non facere nisi est libero eveniet unde, mollitia, atque distinctio repellendus expedita totam itaque. Possimus incidunt vitae architecto illum nostrum saepe, harum qui maiores dolorum reprehenderit quidem totam, repellendus quod officia debitis minus modi velit accusamus. Blanditiis non consequuntur, delectus sapiente porro perspiciatis in qui voluptas maxime obcaecati eveniet aliquid!
+            </p>
+        </div>
+        <div class="indicator">2</div>
+
+    </div>
+</body>
+</html>

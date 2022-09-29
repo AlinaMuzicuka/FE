@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        html, body, .wrapper {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+        }
+        aside {
+            background: rgb(135, 39, 213);
+            grid-area: aside;
+        }
+        header {
+            background: rgb(97, 19, 205);
+            grid-area: header;
+        }
+        .panel1 {
+            background: rgb(5, 102, 144);
+            grid-area: panel1;
+        }
+        .panel2 {
+            background: rgb(1, 182, 130);
+            grid-area: panel2;
+        }
+        .panel3 {
+            background: rgb(214, 166, 216);
+            grid-area: panel3;
+        }
+        .panel4 {
+            background: rgb(238, 238, 170);
+            grid-area: panel4;
+        }
+        .panel5 {
+            background: rgb(226, 177, 177);
+            grid-area: panel5;
+        }
+        .panel6 {
+            background: rgb(129, 68, 68);
+            grid-area: panel6;
+        }
+        footer {
+            background: rgb(112, 215, 221);
+            grid-area: footer;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns: 250px auto auto 250px;
+            grid-template-rows: 200px auto auto;
+            grid-gap: 10px;
+            grid-template-areas:
+                "panel1 header header panel2"
+                "aside panel3 panel3 panel4"
+                "aside panel5 panel6 panel4"
+                "footer footer footer panel4"
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <aside></aside>
+        <header></header>
+        <div class="panel1"></div>
+        <div class="panel2"></div>
+        <div class="panel3"></div>
+        <div class="panel4"></div>
+        <div class="panel5"></div>
+        <div class="panel6"></div>
+        <footer></footer>
+    </div>
+</body>
+</html>
