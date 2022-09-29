@@ -1,4 +1,6 @@
-[timeline](https://alinamuzicuka.github.io/FE/timeline.html)
+
 # Frontend 
 
--[Grid](https://alinamuzicuka.github.io/FE/grid.html)
+
+- [timeline](https://alinamuzicuka.github.io/FE/timeline.html)
+- [Grid](https://alinamuzicuka.github.io/FE/grid.html)
