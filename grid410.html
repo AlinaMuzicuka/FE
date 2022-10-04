@@ -55,6 +55,18 @@
                 "aside aside block3"
                 "footer block5 block4"
         }
+        @media (max-width: 768px) {
+            .wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 200px auto 100px;
+                width: 100%;
+                grid-template-areas:
+                    "header"
+                    "aside"
+                    "footer";
+            }
+        }
     </style>
 </head>
 <body>
