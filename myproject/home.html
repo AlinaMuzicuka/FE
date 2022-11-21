@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+
+        <div class="container">
+    
+            <div class="profile">
+    
+                <div class="profile-image">
+    
+                    <img src="" alt="" id="userAvatar" style="width: 152px; aspect-ratio: 1; border: 2px solid gray;">
+    
+                </div>
+    
+                <div class="profile-user-settings">
+    
+                    <h1 class="profile-user-name" id="username"></h1>
+    
+                    <button class="btn profile-edit-btn" id="edit">Edit Profile</button>
+                    <button class="btn profile-edit-btn" id="_posts">Edit posts</button>
+                    <button class="btn profile-edit-btn" id="logout">Log out</button>
+                    <button class="btn profile-edit-btn" id="delete" style="border-color: red; color: red;">Delete account</button>
+                    <button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+    
+                </div>
+    
+                <div class="profile-stats">
+    
+                    <ul>
+                        <li><span class="profile-stat-count">164</span> posts</li>
+                        <li><span class="profile-stat-count">188</span> followers</li>
+                        <li><span class="profile-stat-count">206</span> following</li>
+                    </ul>
+    
+                </div>
+    
+                <div class="profile-bio">
+                    <span class="profile-real-name" id="fullname"></span>
+                    <span id="userBio"></span>
+    
+                </div>
+    
+            </div>
+            <!-- End of profile section -->
+    
+        </div>
+        <!-- End of container -->
+    
+    </header>
+    
+    <main>
+    
+        <div class="container">
+    
+            <div class="gallery" id="items">
+    
+                
+               
+    
+                
+    
+                
+    
+            </div>
+            <!-- End of gallery -->
+    
+            <div class="loader"></div>
+    
+        </div>
+        <!-- End of container -->
+    
+    </main>
+    <script src="requests.js"></script>
+    <script src="helpers.js"></script>
+    <script src="postapp.js"></script>
+</body>
+</html>
