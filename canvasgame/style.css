@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* #canvas {
+  width: 288px;
+  height: 512px;
+} */
+
+body {
+  background-color: #f1f2f6;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.lives {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+#score {
+  position: absolute;
+  left: 260px;
+  top: 5px;
+  padding: 5px 10px;
+  border-radius: 30%;
+  background: #5ee270be;
+}
+
+.gameOver {
+  display: none;
+}
+
+.gameOver-active {
+  display: block;
+}
+
+#gameOver {
+  height: 80px;
+  width: 100px;
+  position: absolute;
+  left: 90px;
+  top: 176px;
+}
