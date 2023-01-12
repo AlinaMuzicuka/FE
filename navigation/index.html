@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Navigation</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav> -->
+
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+              <button class="nav-link active text-info-emphasis fst-italic" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+              </li>
+              <li class="nav-item" role="presentation">
+              <button class="nav-link  text-info-emphasis fst-italic" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+              </li>
+              <li class="nav-item" role="presentation">
+              <button class="nav-link  text-info-emphasis fst-italic" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+              </li>
+          </ul>
+          <div class="d-none d-lg-block" id="block_search">
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2 fst-italic" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-light text-info-emphasis fst-italic" type="submit">Search</button>
+              </form>
+          </div>
+          <div class="d-lg-none" onclick="searchIn()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="lightblue" class="bi bi-search-heart" viewBox="0 0 16 16">
+              <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
+              <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
+          </svg>
+          </div>
+        </div>
+    </nav>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam modi quo voluptatum ad corrupti consectetur repellat ipsa cum? Tempore a est quibusdam modi rem minus ipsam repellat mollitia cumque quos. Quidem nulla dolorem perferendis maxime itaque illo nobis qui repudiandae porro ullam aspernatur ex molestiae veniam, ipsa enim ad id praesentium nemo blanditiis fugit minus atque! Exercitationem, deserunt mollitia. Ipsum perferendis incidunt ducimus consectetur, iste quod. Id omnis magnam explicabo veritatis alias possimus reprehenderit repudiandae iste, saepe molestias provident delectus. Nemo iste, aspernatur laboriosam temporibus ratione nesciunt a voluptas dolorum ipsum, fuga architecto nam dolor! Dignissimos accusamus quo iste libero cum, laudantium atque quidem beatae, laboriosam veniam soluta qui rem ducimus fugiat est perspiciatis fugit quasi nihil dolores impedit esse aliquam! Exercitationem, aspernatur ab dolorum reiciendis quo labore nemo eius saepe, dolor delectus nobis ipsam velit laboriosam vel blanditiis magnam debitis mollitia atque aperiam non. Sed, soluta consectetur qui quis accusantium suscipit iusto architecto itaque. Laborum accusamus, neque vero ab aspernatur iusto pariatur deleniti dolor. Quod nesciunt cum odit natus, id aliquam itaque repellat voluptate, aliquid cumque at debitis beatae aspernatur sequi corrupti! Sapiente iusto, reiciendis id repellendus minus dolor maiores odit aspernatur, nam fuga molestias recusandae dolorem labore expedita?</div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores at similique itaque, nobis eligendi accusantium ipsam exercitationem, voluptatibus dolorem perspiciatis labore odit quos eaque. Iste, aspernatur. Qui ad quod quibusdam!</div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor asperiores enim, aliquam beatae omnis nostrum hic ab debitis officia sunt corrupti, amet velit repudiandae totam quasi accusamus vitae unde mollitia suscipit eos alias repellendus assumenda in culpa! Tempore rerum reiciendis accusantium nesciunt, et, assumenda itaque dolore doloribus nobis dolor officiis totam ea voluptate molestiae? Dolorum suscipit nostrum placeat ad fugiat recusandae laborum architecto fuga sit vero, repellat assumenda ea? Itaque ea dolor architecto saepe sint, vel commodi dicta ex aut. Accusamus iste alias fugiat, aperiam placeat, hic nulla corrupti dolore recusandae, enim numquam unde doloremque. Commodi temporibus, iste non perspiciatis aspernatur sint consectetur possimus maiores a, autem enim ipsa praesentium unde minima inventore? Asperiores, deserunt neque? Expedita, accusamus dolorem, quaerat pariatur debitis magnam animi perferendis vel officiis voluptates error veritatis iste deleniti voluptas dolore, voluptate ex odit ipsam laborum. Consequuntur possimus odio tenetur, laborum ab pariatur perspiciatis nobis fuga sunt odit totam assumenda aliquid blanditiis vero temporibus provident? At quaerat soluta iure cupiditate aliquid a magni suscipit eveniet, voluptatibus temporibus, adipisci voluptates dolorum dolorem harum maxime saepe commodi odio delectus sed iste voluptatem eius sit itaque inventore. Neque quas unde eos repellat velit corrupti deleniti dolor, est quisquam! Exercitationem doloribus tenetur voluptates numquam. Consequuntur incidunt vero, rerum culpa repellat neque vitae fuga doloribus nam earum cum eaque esse magni nihil quam tenetur, quod provident quis? Minima quia dolorem laudantium ab adipisci voluptatibus, inventore sequi recusandae explicabo nobis dolorum magnam laborum, nulla eum molestias itaque repellat. Esse exercitationem ipsam, molestiae et porro itaque veritatis animi consequatur mollitia asperiores dolorum dolore necessitatibus corrupti magnam obcaecati. Odit at repellendus voluptate corporis nostrum reiciendis sequi ducimus explicabo facere sit! Temporibus, nemo mollitia natus dolorem dignissimos non facilis nostrum consectetur eius maiores fugit cum veniam, excepturi voluptatem minima tempora! Deleniti, eligendi! Velit voluptatibus libero aliquam.</div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+    </script>
+</body>
+</html>
