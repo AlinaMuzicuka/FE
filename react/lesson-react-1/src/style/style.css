@@ -1,0 +1,30 @@
+.mobile_nav {
+  display: block;
+}
+
+.mobile_icon {
+  display: none;
+}
+
+.burger_position {
+  position: absolute;
+  top: 12px;
+  right: 40px;
+}
+
+.burger_position_active {
+  position: absolute;
+  top: 15px;
+  right: 13px;
+}
+
+@media (max-width: 768px) {
+  .mobile_menu {
+    display: none;
+  }
+  .mobile_icon {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
